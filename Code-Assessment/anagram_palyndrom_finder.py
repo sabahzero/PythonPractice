@@ -2,7 +2,7 @@
 
 from urllib.request import urlopen
 
-with urlopen() as webpage:
+with urlopen('https://www.wikidata.org/wiki/Q13417213') as webpage:
     content = webpage.read().decode()
 
 print(content)
